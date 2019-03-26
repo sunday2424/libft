@@ -6,7 +6,7 @@
 /*   By: junpark <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/19 05:36:53 by junpark           #+#    #+#             */
-/*   Updated: 2019/02/25 22:23:57 by junpark          ###   ########.fr       */
+/*   Updated: 2019/03/25 21:07:48 by junpark          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 void	ft_putstr(char const *s)
 {
-	int i;
-
-	i = 0;
 	if (s)
-		while (s[i] != '\0')
-			ft_putchar(s[i++]);
+		write(1, s, ft_strlen(s));
 }
